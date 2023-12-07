@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        img { float: left; width: 50%; height: 20%; }
         body {
-            transition: background-color 2s ease;
+            transition: all 2s;
           }
+        
+
         
           .red-text {
             color: red;
@@ -23,47 +26,69 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Stephen Curry               </span>  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect yellow-checkbox" for="checkbox-1">
-        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" onchange="toggleBackgroundColor()">
-        <span class="mdl-checkbox__label red-text">DARK DESING</span>
-      </label>
+      <span class="mdl-layout-title">Stephen Curry</span>
     
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
-      <a href="#scroll-tab-2" class="mdl-layout__tab">DARK-WITHE MODE TOGGLE</a>
-      <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
-      <a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
-      <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
-      <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Inforfations</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab"></a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab"></a>
+      <a href="#scroll-tab-4" class="mdl-layout__tab"></a>
+      <a href="#scroll-tab-5" class="mdl-layout__tab"></a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab"></a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Stephen Curry</span>
+    <span class="mdl-layout-title">SETTINGS</span>
+    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect yellow-checkbox" for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" onchange="toggleBackgroundColor(),TextColorSet()">
+        <span class="mdl-checkbox__label red-text">DARK DESING</span>
   </div>
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-      <div class="page-content"><!-- Your content goes here --></div>
+      <div class="page-content">
+        <ul id="stichcolor">
+            <li>Height: 6 feet 2 inches</li>
+            <li>Age: 35</li>
+            <li>Number: 30</li>
+            <li>Team: Warriors</li>
+
+        </ul>
+        <h5 id="textcolor">He is a 4 x Champ. And the all time 3point leader. He is considered the best shooter of all time. He is the favorite player of a lot of people. His coolest shoe is the curry 9</h5>
+        <img src="under-armour-curry-9-street-blu-430878-3024248-404-960 (1).png" alt="PICTURE DOES NOT LOAD!!!!! SERVER CRASHED!!!" sizes="" srcset="">
+      </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content">
         
-
-
-  <script>
+   <script>
     function toggleBackgroundColor() {
       const body = document.body;
       const checkbox = document.getElementById('checkbox-1');
 
       if (checkbox.checked) {
         // Checkbox is checked, set background color to white
-        body.style.backgroundColor = 'black';
+        body.style.backgroundColor = 'black';        
       } else {
         // Checkbox is not checked, set background color to black
         body.style.backgroundColor = 'white';
       }
     }
+
+    function TextColorSet() {       
+        const dot = document.getElementById('')
+        const checkbox = document.getElementById('checkbox-1')
+        const text5 = document.getElementById('textcolor')
+        if (checkbox.checked) {
+           text5.style.color = 'blue';
+
+        } else {
+            text5.style.color = 'black';
+        }
+    }
+
+
   </script>
       </div>
     </section>
