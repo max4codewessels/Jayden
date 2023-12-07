@@ -24,7 +24,7 @@
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Stephen Curry               </span>  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect yellow-checkbox" for="checkbox-1">
-        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked onchange="toggleBackgroundColor()">
+        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" onchange="toggleBackgroundColor()">
         <span class="mdl-checkbox__label red-text">DARK DESING</span>
       </label>
     
@@ -44,29 +44,12 @@
   </div>
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-      <div class="page-content">
-  <script>
-    function toggleBackgroundColor() {
-      const body = document.body;
-      const checkbox = document.getElementById('checkbox-1');
-
-      if (checkbox.checked) {
-        // Checkbox is checked, set background color to white
-        body.style.backgroundColor = 'black';
-      } else {
-        // Checkbox is not checked, set background color to black
-        body.style.backgroundColor = 'white';
-      }
-    }
-  </script></div>
+      <div class="page-content"><!-- Your content goes here --></div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content">
         
-  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect yellow-checkbox" for="checkbox-1">
-    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked onchange="toggleBackgroundColor()">
-    <span class="mdl-checkbox__label red-text">DARK DESING</span>
-  </label>
+
 
   <script>
     function toggleBackgroundColor() {
