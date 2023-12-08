@@ -32,7 +32,7 @@
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
       <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Inforfations</a>
-      <a href="#scroll-tab-2" class="mdl-layout__tab"></a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Pictures</a>
       <a href="#scroll-tab-3" class="mdl-layout__tab"></a>
       <a href="#scroll-tab-4" class="mdl-layout__tab"></a>
       <a href="#scroll-tab-5" class="mdl-layout__tab"></a>
@@ -61,7 +61,26 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content">
-        
+        <center> 
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGioO5ac923MpghyRbID9S9HHeGsyHI0PHA&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm7f9pkJQHNySVZcVO1iBi4-XWUvJsCwEZQQ&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxLMq7vlvQNssGC7kBeHMq03-HSIhgkB_bGw&usqp=CAU" alt="PICTURE DOES NOT LOAD!!!!! SERVER CRASHED!!!" sizes="" srcset="">
+        </center>
+        <center>
+           
+            <h3 id="text3">Stephen Curry´s Family:</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrssuo_ZHACB6HJdVg3DjEd6lOTubDccuDg&usqp=CAU" alt="">
+
+        </center>
+
+
+
+
+
+
+
+
    <script>
     function toggleBackgroundColor() {
       const body = document.body;
@@ -76,15 +95,19 @@
       }
     }
 
-    function TextColorSet() {       
-        const dot = document.getElementById('')
+    function TextColorSet() {  
+        const text3 = document.getElementById('text3')     
+        const dot = document.getElementById('stichcolor')
         const checkbox = document.getElementById('checkbox-1')
         const text5 = document.getElementById('textcolor')
         if (checkbox.checked) {
            text5.style.color = 'blue';
-
+           dot.style.color = 'blue';
+           text3.style.color = 'blue';
         } else {
             text5.style.color = 'black';
+            dot.style.color = 'black'
+            text3.style.color = 'black'
         }
     }
 
